@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <title>Slider Content</title>
+</head>
+<body>
+
+    <div class="heading">
+        <h1>JS Slider</h1>
+    </div>
+
+    <div class="slideContainer">
+        <div class="Slide">
+            <img
+                src="https://picsum.photos/id/234/500/300" />
+                <div class="Caption">Photo 1</div>
+            
+        </div>
+        <div class="Slide">
+            <img
+                src="https://picsum.photos/id/235/500/300" />
+                <div class="Caption">Photo 2</div>
+            
+        </div>
+        <div class="Slide">
+            <img
+                src="https://picsum.photos/id/236/500/300" />
+                <div class="Caption">Photo 3</div>
+            
+        </div>
+        <a class="prevBtn" onclick="currentSlide(-1)">❮</a>
+        <a class="nextBtn" onclick="currentSlide(1)">❯</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="Navdot" onclick="navLocation(1)"></span>
+        <span class="Navdot" onclick="navLocation(2)"></span>
+        <span class="Navdot" onclick="navLocation(3)"></span>
+    </div>
+
+    <script src="slider.js"></script>
+    
+</body>
+</html>
